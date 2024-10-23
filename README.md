@@ -27,3 +27,4 @@ Vem com uma base de extensões/utilitarios já prontos para uso neste ambiente, 
 ``git push`` empurrar alterações locais para o origin.
 ``git push --force`` empurrar de forma forçada alterações locais para o origin.
 ``git push -f - a`` forma comprimida do comando anterior.
+
