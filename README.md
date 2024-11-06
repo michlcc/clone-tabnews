@@ -28,3 +28,4 @@ Vem com uma base de extensões/utilitarios já prontos para uso neste ambiente, 
 ``git push --force`` empurrar de forma forçada alterações locais para o origin.
 ``git push -f - a`` forma comprimida do comando anterior.
 
+- Arquivos de manifesto: `package.json` arquivo que guarda informações de: metadados(autor, distrição, info do ambiente de execução); scripts(para instalação de dependencias); dependencies(com info dessas dependencias). `package-lock.json` arquivo que guarda info inclusivamente sobre as dependencias; tanto as principais instaladas, como as subdependencias de forma ramificada; é um arquivo importante para rastrar e bloquear as versões em execução.
