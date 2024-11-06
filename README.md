@@ -20,7 +20,7 @@ Vem com uma base de extensões/utilitarios já prontos para uso neste ambiente, 
 . ``git log --stat`` para ver os arquivos de cada commits de forma detalhada na quantidade de modificações
 . ``git log --oneline`` para ver os commits resumidamente, com inicial do hash e titulo
 . ``git status`` para ver como estão os arquivos do repositorio atual indicando se é untracked, modified, staged e commited
-. ``git commit --amend`` para voltar um commit anterior substitundo por um novo com seu novo hash
+. ``git commit --amend`` para voltar um commit anterior substitundo por um novo com seu novo hash (obs quando for dar um push no repo remoto receberá um erro, pois o commit anterior no remoto tem apontado u mcommit que no local não existe mais justamente pelo comando --amend. Uma alternativa perigosa para resolver isso é dar o git push -force)
 
 - Commit no repo remoto:
 ``git commit -m "clear"`` atalho para fazer novos commits.
@@ -28,4 +28,4 @@ Vem com uma base de extensões/utilitarios já prontos para uso neste ambiente, 
 ``git push --force`` empurrar de forma forçada alterações locais para o origin.
 ``git push -f - a`` forma comprimida do comando anterior.
 
-- Arquivos de manifesto: `package.json` arquivo que guarda informações de: metadados(autor, distrição, info do ambiente de execução); scripts(para instalação de dependencias); dependencies(com info dessas dependencias). `package-lock.json` arquivo que guarda info inclusivamente sobre as dependencias; tanto as principais instaladas, como as subdependencias de forma ramificada; é um arquivo importante para rastrar e bloquear as versões em execução.
+- Arquivos de manifesto: `package.json` arquivo que guarda informações de: metadados(autor, distrição, info do ambiente de execução); scripts(para instalação de dependencias); dependencies(com info dessas dependencias instaladas pelo npm). `package-lock.json` arquivo que guarda info inclusivamente sobre as dependencias; tanto as principais instaladas, como as subdependencias de forma ramificada; é um arquivo importante para rastrar e bloquear as versões em execução.
